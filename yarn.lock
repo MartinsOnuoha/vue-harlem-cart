@@ -943,6 +943,19 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@harlem/plugin-devtools@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@harlem/plugin-devtools/-/plugin-devtools-2.2.0.tgz#011b666c617d8e79e49944f3f9bd4e617b97178d"
+  integrity sha512-XGI6GfDA8Mxiqw4MH0NGqnoBAMv5ZQlvp5Ef+kdYn8JRuOKmQ1fKZdGmJXeoyG/HAlfx92e/Q1M6yfK/3KPw6w==
+  dependencies:
+    "@harlem/utilities" "^2.2.0"
+    "@vue/devtools-api" "^6.0.0-beta.15"
+
+"@harlem/utilities@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@harlem/utilities/-/utilities-2.2.0.tgz#b609ee79cf9f17cbf2f4479eb9af5f150917d95c"
+  integrity sha512-ViNaRdmXOjKn/ikxZFWW4Id4IbAkaZYiaIJ8DFNHau4w3VdSuaBHtmc8AHaN3JEF3qmQ1mHCdrAon08fMtEz9Q==
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -1441,6 +1454,11 @@
     vue-template-es2015-compiler "^1.9.0"
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
+
+"@vue/devtools-api@^6.0.0-beta.15":
+  version "6.0.0-beta.20.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.20.1.tgz#5b499647e929c35baf2a66a399578f9aa4601142"
+  integrity sha512-R2rfiRY+kZugzWh9ZyITaovx+jpU4vgivAEAiz80kvh3yviiTU3CBuGuyWpSwGz9/C7TkSWVM/FtQRGlZ16n8Q==
 
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.2"
