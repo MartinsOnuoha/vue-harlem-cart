@@ -1,6 +1,7 @@
 <template>
   <div class="app">
-    <h3>{{ state.cartName }} ({{ cartItems.length }})</h3>
+    <h3>{{ state.cartName }} ({{ cartItems.length }}) <button @click="clear">clear cart</button></h3>
+    <input type="text" v-model="cartName">
     <div class="store">
       <div class="store__product" v-for="(item, index) in availableItems" :key="index">
         <div class="store__product_image">
@@ -11,7 +12,7 @@
             {{ item.title }}
           </div>
           <div class="store__product_price">$ 109.95</div>
-          <button @click="add">Add To Cart</button>
+          <button class="atc" @click="add(item)">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -19,35 +20,31 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { computed, onMounted } from 'vue';
 
 import {
     state,
     addToCart,
     cartItems,
+    clearCart,
+    setCartName,
     availableItems,
-    populateStore,
+    fetchStoreData,
 } from './stores/cart';
 
 const add = (item) => {
   addToCart(item)
 }
+const clear = () => clearCart()
 
-onMounted(() => {
-  fetch('https://fakestoreapi.com/products')
-            .then(res => res.json())
-            .then(json => populateStore(json.map(({ title, price, description, image }) => ({ title, price, description, image, isAvailable: true }))))
+const cartName = computed({
+  get: () => state.cartName,
+  set: value => setCartName(value)
 })
 
-// const firstName = computed({
-//     get: () => state.firstName,
-//     set: value => setFirstName(value)
-// });
-
-// const lastName = computed({
-//     get: () => state.lastName,
-//     set: value => setLastName(value)
-// });
+onMounted(() => {
+  fetchStoreData()
+})
 
 </script>
 
@@ -85,7 +82,7 @@ onMounted(() => {
   position: absolute;
   width: 100%;
 }
-button {
+.atc {
   padding: 20px;
   background: #000;
   color: #fff;

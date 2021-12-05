@@ -943,6 +943,20 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@harlem/extension-action@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@harlem/extension-action/-/extension-action-2.2.0.tgz#6376e1e718970a8190a036af3260c5a29ff92567"
+  integrity sha512-/6UuwG4ur0nErNYVG5jyUhGK46O3VpHr23JTDlMFbh1NuwuJU4qP/n+3Esa11C0xy1CXfjBKH/J+Q01F2eeUXQ==
+  dependencies:
+    "@harlem/task" "^2.2.0"
+
+"@harlem/extension-storage@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@harlem/extension-storage/-/extension-storage-2.2.0.tgz#2dffe71af2c2cb8c25511b24f0dd4a859aad944e"
+  integrity sha512-7JygwZw1mPFeZgFkyLgRpnyPmehVRBGS01htVesocxtc6DXU4WzFI/ArcvvJdsq6DslZoOrQAdRmPWtVOtQFWw==
+  dependencies:
+    "@harlem/utilities" "^2.2.0"
+
 "@harlem/plugin-devtools@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@harlem/plugin-devtools/-/plugin-devtools-2.2.0.tgz#011b666c617d8e79e49944f3f9bd4e617b97178d"
@@ -950,6 +964,11 @@
   dependencies:
     "@harlem/utilities" "^2.2.0"
     "@vue/devtools-api" "^6.0.0-beta.15"
+
+"@harlem/task@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@harlem/task/-/task-2.2.0.tgz#76b7512d0f8347c4093076e2c73e06bbb091ca14"
+  integrity sha512-PA3e+DpM+Fe7Ptl5H7XSSLMUxoxl8ulbNvAwOE8KjlbkoYXhGWSzTZk0sFch0oJABkxDgbUdUugNNFp3zrdmHg==
 
 "@harlem/utilities@^2.2.0":
   version "2.2.0"
