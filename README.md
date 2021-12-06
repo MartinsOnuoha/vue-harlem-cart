@@ -1,4 +1,6 @@
-# vue-harlem
+# Vue x Harlem Sample
+
+This is a demo application using Harlem as an alternative store in Vue3. Try it Out [HERE](http://vue-harlem.surge.sh/)
 
 ![image](https://cdn-images-1.medium.com/max/1600/1*s3yyIyvI17HViOFLtDFANw.gif)
 
